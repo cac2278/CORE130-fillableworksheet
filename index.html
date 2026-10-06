@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORE 130 — Feminist Research Lens Worksheet</title>
+<style>
+:root{--ink:#24222a;--muted:#68636e;--accent:#5d4a6f;--line:#c8c3cc;--paper:#fff;--soft:#f7f5f8}
+*{box-sizing:border-box}
+html{background:#eee}
+body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.page{width:8.5in;min-height:11in;margin:auto;padding:.48in .55in .42in;background:var(--paper)}
+.top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #d8d4db;padding-bottom:9px}
+.kicker{font-size:9px;font-weight:800;letter-spacing:.14em;color:var(--accent)}
+h1{font-size:22px;line-height:1.05;margin:3px 0 0}
+.name{font-size:9px;border-bottom:1px solid var(--ink);width:180px;padding-bottom:3px}
+.question{text-align:center;margin:12px auto 8px;max-width:620px;font-size:11px;line-height:1.35}
+.question b{display:block;font-size:9px;letter-spacing:.11em;color:var(--accent);margin-bottom:3px}
+.search-strip{display:grid;grid-template-columns:.9fr .9fr 1.1fr 1.35fr;gap:10px;margin:8px 0 13px}
+.search-cell{font-size:8px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.line{height:20px;border-bottom:1px solid var(--line)}
+.prompt{text-align:center;font-size:10px;color:var(--muted);margin:0 0 7px}
+.visual{position:relative;height:510px;width:100%;max-width:690px;margin:0 auto}
+.power{
+ position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+ width:430px;height:430px;border:2px dashed #b4aeb8;border-radius:50%;
+}
+.power-label{
+ position:absolute;top:-17px;left:50%;transform:translateX(-50%);
+ background:#fff;padding:0 14px;text-align:center;white-space:nowrap
+}
+.power-label strong{display:block;font-size:12px;letter-spacing:.14em}
+.power-label span{display:block;font-size:8px;color:var(--muted);margin-top:1px}
+.glass{
+ position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+ width:238px;height:238px;border:8px solid var(--accent);border-radius:50%;background:#fff
+}
+.glass:after{
+ content:"";position:absolute;width:105px;height:18px;background:var(--accent);
+ border-radius:12px;right:-82px;bottom:-42px;transform:rotate(43deg);transform-origin:left center
+}
+.glass-inner{
+ position:absolute;inset:23px;border:1px solid #d2ced5;border-radius:50%;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px
+}
+.glass-inner b{font-size:9px;letter-spacing:.09em;color:var(--accent)}
+.glass-inner p{font-size:11px;font-weight:700;line-height:1.25;margin:5px 0 8px}
+.glass-lines{width:125px;height:58px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 17px,#cbc7ce 17px,#cbc7ce 18px)}
+.term{position:absolute;width:180px;background:#fff}
+.term h2{font-size:11px;margin:0 0 2px}
+.term .ask{font-size:9px;color:var(--muted);margin-bottom:4px}
+.term .write{height:50px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 16px,#d0ccd3 16px,#d0ccd3 17px)}
+.pos{left:0;top:55px}
+.inter{right:0;top:55px}
+.auth{left:0;top:325px}
+.lang{right:0;top:325px}
+.abs{left:50%;bottom:0;transform:translateX(-50%);width:205px;text-align:center}
+.abs .write{height:38px}
+.synthesis{border-top:1px solid #d8d4db;margin-top:38px;padding-top:9px}
+.synthesis b{display:block;text-align:center;font-size:11px;margin-bottom:3px}
+.synthesis p{text-align:center;font-size:9.5px;color:var(--muted);margin:0 auto 4px;max-width:610px}
+.synth-lines{height:58px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 18px,#c9c6cc 18px,#c9c6cc 19px)}
+.footer{text-align:center;margin-top:7px;font-size:8px;color:var(--muted)}
+@media print{
+html,body{background:#fff}
+.page{margin:0;width:auto;min-height:auto}
+@page{size:letter;margin:0}
+
+/* Preserve worksheet marks that browsers often suppress in print preview. */
+.line{border-bottom:1px solid #777!important}
+.glass:after{
+  content:""!important;
+  display:block!important;
+  background:#5d4a6f!important;
+  -webkit-print-color-adjust:exact!important;
+  print-color-adjust:exact!important;
+}
+.glass-lines,.term .write,.abs .write,.synth-lines,.reflection-lines{
+  background:none!important;
+  position:relative;
+}
+.glass-lines:after,.term .write:after,.abs .write:after,.synth-lines:after,.reflection-lines:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(to bottom,transparent 0,transparent 17px,#999 17px,#999 18px)!important;
+  -webkit-print-color-adjust:exact!important;
+  print-color-adjust:exact!important;
+}
+}
+
+.verso{page-break-before:always;break-before:page}
+.verso-head{border-bottom:1px solid #d8d4db;padding-bottom:9px;margin-bottom:14px}
+.verso-head .kicker{margin-bottom:3px}
+.verso-head h1{margin:0 0 4px}
+.verso-head p{margin:0;color:var(--muted);font-size:10px}
+.reflection-list{margin:0;padding:0;list-style:none;counter-reset:reflect}
+.reflection-item{counter-increment:reflect;margin:0 0 17px}
+.reflection-q{display:grid;grid-template-columns:25px 1fr;gap:8px;align-items:start;font-size:11px;line-height:1.35;font-weight:700}
+.reflection-q:before{content:counter(reflect) ".";font-size:11px;color:var(--accent);font-weight:800}
+.reflection-lines{margin:7px 0 0 33px;height:102px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 18px,#c9c6cc 18px,#c9c6cc 19px)}
+.reflection-item:first-child .reflection-lines{height:94px}
+.verso-footer{margin-top:5px;padding-top:8px;border-top:1px solid #d8d4db;text-align:center;font-size:8px;color:var(--muted)}
+
+
+/* Hybrid-class typing support */
+[contenteditable="true"]{
+  cursor:text;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  outline:none;
+}
+[contenteditable="true"]:focus{
+  outline:2px solid #6f5b80;
+  outline-offset:2px;
+}
+.line[contenteditable="true"]{min-height:22px;}
+.glass-lines[contenteditable="true"],
+.write[contenteditable="true"],
+.synth-lines[contenteditable="true"],
+.reflection-lines[contenteditable="true"]{z-index:1;}
+[contenteditable="true"]:empty:before{
+  content:"Click or tap here to type";
+  color:#777;
+  font-size:9px;
+  font-style:italic;
+}
+@media print{
+  [contenteditable="true"]{outline:none!important;}
+  [contenteditable="true"]:empty:before{content:""!important;}
+}
+
+
+/* Digital worksheet controls; hidden in print. */
+.worksheet-controls{
+  width:8.5in;
+  max-width:calc(100% - 24px);
+  margin:12px auto 0;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+  font-family:Arial,Helvetica,sans-serif;
+}
+.worksheet-controls button{
+  border:1px solid #5d4a6f;
+  border-radius:7px;
+  background:#fff;
+  color:#34283e;
+  padding:8px 12px;
+  font:700 13px/1.2 Arial,Helvetica,sans-serif;
+  cursor:pointer;
+}
+.worksheet-controls button:hover,
+.worksheet-controls button:focus{
+  background:#f4f0f6;
+}
+#saveStatus{
+  color:#555;
+  font-size:12px;
+}
+@media print{
+  .worksheet-controls{display:none!important;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="worksheet-controls" aria-label="Worksheet controls">
+  <button type="button" id="saveWorksheet">Save my worksheet</button>
+  <button type="button" id="printWorksheet">Print / Save as PDF</button>
+  <span id="saveStatus" role="status" aria-live="polite">Responses autosave in this browser.</span>
+</div>
+
+<main class="page">
+<header class="top">
+ <div><div class="kicker">CORE 130 · WGS RESEARCH LENS</div><h1>What did your search make visible?</h1></div>
+ <div class="name">Name: ________________________</div>
+</header>
+
+<div class="question"><b>RESEARCH QUESTION</b>Why do experiences of workplace inequality differ among women of different racial and socioeconomic backgrounds?</div>
+
+<section class="search-strip" aria-label="Your search">
+ <div class="search-cell">Disciplinary lens<div class="line" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="search-cell">Database<div class="line" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="search-cell">Keywords / search<div class="line" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="search-cell">Source I found<div class="line" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+</section>
+
+<p class="prompt">After you search, use a few words or phrases to map what came into view.</p>
+
+<section class="visual" aria-label="Feminist research lens reflection map">
+ <div class="power" aria-hidden="true"><div class="power-label"><strong>POWER</strong><span>shapes what becomes visible</span></div></div>
+
+ <div class="term pos"><h2>Positionality</h2><div class="ask">Where are we looking from?</div><div class="write" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="term inter"><h2>Intersectionality</h2><div class="ask">What becomes visible when categories interact?</div><div class="write" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="term auth"><h2>Authority</h2><div class="ask">Who gets to be a knower?</div><div class="write" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="term lang"><h2>Language</h2><div class="ask">Who gets to name things?</div><div class="write" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+ <div class="term abs"><h2>Absence</h2><div class="ask">What isn't here—and why?</div><div class="write" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div></div>
+
+ <div class="glass" aria-hidden="true">
+   <div class="glass-inner">
+     <b>WHAT I FOUND</b>
+     <p>What can this source help me understand?</p>
+     <div class="glass-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+   </div>
+ </div>
+</section>
+
+<section class="synthesis">
+ <b>Now look at the whole lens.</b>
+ <p>How did your discipline, language, database, and source shape what you were able to know? What might you search differently next?</p>
+ <div class="synth-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+</section>
+
+<div class="footer">Research is not only about what we find. It is also about how knowledge becomes visible to us.</div>
+</main>
+
+<main class="page verso">
+  <header class="verso-head">
+    <div class="kicker">CORE 130 · AFTER YOU SEARCH</div>
+    <h1>Reflect on what became visible.</h1>
+    <p>Many of the systems we use to organize and find information developed within scholarly traditions shaped by patriarchy. Women’s and Gender Studies knowledge can therefore be harder to find using the most obvious terms and pathways. WGS research often requires us to search creatively—and then reflect on what our search made visible, what it missed, and why.</p>
+  </header>
+
+  <ol class="reflection-list">
+    <li class="reflection-item">
+      <div class="reflection-q">What became visible through your lens that another discipline might have missed?</div>
+      <div class="reflection-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+    </li>
+    <li class="reflection-item">
+      <div class="reflection-q">Even though our question considers gender, race, and socioeconomic background, whose experiences could still be missing from the research? Why is this important?</div>
+      <div class="reflection-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+    </li>
+    <li class="reflection-item">
+      <div class="reflection-q">What can your chosen source help us understand about this question? What can’t it tell us? What other evidence could we use to understand what’s missing?</div>
+      <div class="reflection-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+    </li>
+    <li class="reflection-item">
+      <div class="reflection-q">How did your choices—discipline, keywords, and database—shape what you were able to find? What might have changed if you had searched differently?</div>
+      <div class="reflection-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+    </li>
+    <li class="reflection-item">
+      <div class="reflection-q">What stayed with you from this experience? Why?</div>
+      <div class="reflection-lines" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true"></div>
+    </li>
+  </ol>
+
+  <div class="verso-footer">Look across your answers: what did your research process make easier to see, and what remains harder to see?</div>
+</main>
+
+
+<script>
+(function(){
+  const STORAGE_KEY = "core130-wgs-research-lens-v13";
+  const fields = Array.from(document.querySelectorAll('[contenteditable="true"]'));
+  const status = document.getElementById("saveStatus");
+  let timer;
+
+  function fieldValues(){
+    return fields.map(function(el){ return el.innerHTML; });
+  }
+
+  function saveLocal(){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(fieldValues()));
+      status.textContent = "Saved in this browser.";
+    }catch(e){
+      status.textContent = "Browser autosave is unavailable; use “Save my worksheet.”";
+    }
+  }
+
+  function restoreLocal(){
+    try{
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+      if(Array.isArray(saved)){
+        fields.forEach(function(el, i){
+          if(typeof saved[i] === "string") el.innerHTML = saved[i];
+        });
+      }
+    }catch(e){}
+  }
+
+  function scheduleSave(){
+    status.textContent = "Saving…";
+    clearTimeout(timer);
+    timer = setTimeout(saveLocal, 250);
+  }
+
+  fields.forEach(function(el){ el.addEventListener("input", scheduleSave); });
+  restoreLocal();
+
+  document.getElementById("printWorksheet").addEventListener("click", function(){
+    saveLocal();
+    window.print();
+  });
+
+  document.getElementById("saveWorksheet").addEventListener("click", function(){
+    saveLocal();
+
+    const clone = document.documentElement.cloneNode(true);
+    const liveFields = document.querySelectorAll('[contenteditable="true"]');
+    const cloneFields = clone.querySelectorAll('[contenteditable="true"]');
+    liveFields.forEach(function(el, i){
+      if(cloneFields[i]) cloneFields[i].innerHTML = el.innerHTML;
+    });
+
+    const cloneStatus = clone.querySelector("#saveStatus");
+    if(cloneStatus) cloneStatus.textContent = "Responses autosave in this browser.";
+
+    const blob = new Blob(["<!DOCTYPE html>\n" + clone.outerHTML], {type:"text/html;charset=utf-8"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "CORE130_WGS_Research_Lens_My_Worksheet.html";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    status.textContent = "Worksheet copy saved.";
+  });
+})();
+</script>
+
+</body>
+</html>
